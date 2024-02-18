@@ -1,5 +1,17 @@
 # **365 Data Science Sign-Up Flow Optimization Case Study**
 
+## Table of Contents
+- [Project Overview](#project-overview)
+- [About the Company](#about-the-company)
+- [Things to Know Before We Start](#things-to-know-before-we-start)
+- [Pre-Analysis](#pre-analysis)
+- [Current State of Affairs](#current-state-of-affairs)
+- [Business Objective](#business-objective)
+- [Hypothesis](#hypothesis)
+- [Actionable Insights Based on our Analysis](#actionable-insights-based-on-our-analysis)
+- [A/B Testing and Conclusion](a/b-testing-and-conclusion)
+- [Contact Information](#contact-information)
+
 ## Project Overview
 
 We used MySQL to extract relevant data in the form of CSV files and Tableau to create a story-based [dashboard](https://public.tableau.com/app/profile/pricila.miguel/viz/365Sign-UpFlow/Sign_UpFlow) for our analysis.
@@ -12,7 +24,7 @@ As a data analyst, our task is to provide recommendations to help elevate the pl
 
 Learn more on the [365 Data Science](https://365datascience.com/) website.
 
-## Thing to Know Before We Start
+## Things to Know Before We Start
 
 At the point of the data collection, the website’s registration screen featured social media options at the top with Google as the first and largest option, and LinkedIn and Facebook as alternative options. Below the social media options is the email option which include empty name, email address, and password fields.
 
@@ -25,12 +37,12 @@ At the point of the data collection, the website’s registration screen feature
 
 ## Pre-Analysis
 
-The first visualization, based on the collected data, contained the monthly sign-up conversion rates for both free registered users and all registered users, along with their preferred devices and operating systems.
+The first visualization on our story-based [dashboard](https://public.tableau.com/app/profile/pricila.miguel/viz/365Sign-UpFlow/Sign_UpFlow), based on the collected data, contained the monthly sign-up conversion rates for both free registered users and all registered users, along with their preferred devices and operating systems.
 
 - **Sign-Up Conversion Rate** = (number of registered users / number of all visitors) * 100
 - **Visitor-to-Registered:** All successful registrations
 - **Visitor-to-Free:** Of those who registered, are free users; excluding direct purchases.
-  - **Direct Purchase:** Those who subscribed within 30 minutes of registering 
+  - **Direct Purchase:** Those who subscribed within **30 minutes** of registering 
 
 <img width="1350" alt="365_SignUp_Conversion_Rate_And_Devices" src="https://github.com/pricilamiguel/365_SignUp_Flow_Optimization_Case_Study/assets/131540339/e0125f91-2486-4532-963a-c01c5194219c">
 
@@ -108,7 +120,7 @@ WHERE cv.date_session < '2023-02-01'
 ORDER BY cv.date_session;
 ```
 > [!NOTE]
-> Full sign-up converision rate SQL query [here]
+> Full sign-up converision rate SQL query [here](Full_SQL_Querries/signup_converstion_rate_query.sql)
 
 The next visualization we created enabled us to explore the preferred methods for signing up on the platform, including device and operating systems, and to analyze the errors encountered by visitors when their registration fails.
 
@@ -171,7 +183,7 @@ END) AS device
 ```
 
 > [!NOTE]
-> Full sign-up types and errors SQL query [here]
+> Full sign-up types and errors SQL query [here](Full_SQL_Querries/signup_types_errors_query.sql)
 
 The final visualization was made to visually represent users’ log-in capabilities after registration, along with any associated error messages.
 
@@ -180,9 +192,9 @@ The final visualization was made to visually represent users’ log-in capabilit
 We repeated the steps taken for the log-in types data, as we did for the sign-up types data.
 
 > [!NOTE]
-> Full log-in types and errors SQL query [here]
+> Full log-in types and errors SQL query [here](Full_SQL_Querries/login_types_query.sql)
 
-## Current Sate of Affairs
+## Current State of Affairs
 
 After analyzing the current state of affairs, we found that visitors frequently encountered issues while trying to register on the platform via email on mobile devices. This finding is notable because email sign-up, although the second most common method, registers a substantial number of unsuccessful attempts. Additionally, our findings reveal that Google, the most popular alternative, exhibits higher success rates compared to email for sign-up attempts overall.
 
@@ -222,9 +234,9 @@ These measures aim to ensure a seamless sign-up experience and improve the visit
 
 We conducted an A/B test to evaluate the effectiveness of restructuring the sign-up screen in boosting the visitor-to-free conversion rate. Over a month, we evenly split more than 300,000 visitors into two groups. In addition to tracking the visitor-to-free conversion rate, we tracked metrics such as sign-up window open conversion rate and average sign-up time.
 
-Key metrics we monitored included site crashes, significant drops in sign-ups, and errors from specific sign-up methods to prevent negative impacts on users and the business. For instance, if a large number of visitors found the new sign-up screen unappealing, successful registrations through version H1 would substantially decrease compared to the original version, prompting suspension of the test to avoid losing potential customers.
+Key metrics we monitored included site crashes, significant drops in sign-ups, and errors from specific sign-up methods to prevent negative impacts on users and the business. For instance, if a large number of visitors found the new sign-up screen unappealing, successful registrations through version H<sub>1</sub> would substantially decrease compared to the original version, prompting suspension of the test to avoid losing potential customers.
 
-Results confirmed our hypothesis with statistical significance (82.61% power, p-value of 0.0343 at 95% confidence). The modified screen (version H1) exhibited a 4.5% higher visitor-to-free conversion rate compared to the original (version H0). Additionally, visitors spent less time signing up on the modified screen.
+Results confirmed our hypothesis with statistical significance (82.61% power, p-value of 0.0343 at 95% confidence). The modified screen (version H<sub>1</sub>) exhibited a 4.5% higher visitor-to-free conversion rate compared to the original (version H<sub>0</sub>). Additionally, visitors spent less time signing up on the modified screen.
 
 We are confident that the enhanced sign-up screen will attract a larger user base, leading to increased paid users and revenue.
 

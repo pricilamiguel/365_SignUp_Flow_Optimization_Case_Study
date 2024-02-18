@@ -187,7 +187,7 @@ We repeated the steps taken for the log-in types data, as we did for the sign-up
 After analyzing the current state of affairs, we found that visitors frequently encountered issues while trying to register on the platform via email on mobile devices. This finding is notable because email sign-up, although the second most common method, registers a substantial number of unsuccessful attempts. Additionally, our findings reveal that Google, the most popular alternative, exhibits higher success rates compared to email for sign-up attempts overall.
 
 > [!NOTE]
-> To find the corresponding data finding, refer to the ‘Current State of Affairs’ section in the [365 Sign-Up Flow Optimization Analysis Report]
+> To find the corresponding data findings, refer to the ‘Current State of Affairs’ section in the [365 Sign-Up Flow Optimization Analysis Report](365_Analysis_Report.docx)
 
 ## Business Objective
 
@@ -202,7 +202,7 @@ Our hypothesis is that by highlighting the more effective social media sign-up o
 With the free-to-paid conversion rate staying consistent at 3.9%, we can expect a proportional increase in users converting from free to paid. Assuming a consistent visitor volume, for every 10,000 visitors, an additional 14 free users should convert to paid subscriptions, generating an extra $420 in revenue. Ultimately, this strategic adjustment is poised to contribute significantly to the overall growth of the business's revenue.
 
 > [!NOTE]
-> For a detailed explanation of how this hypothesis was developed, refer to the ‘Hypothesis’ and ‘Opportunity Sizing’ section in the [365 Sign-Up Flow Optimization Analysis Report]
+> For a detailed explanation of how this hypothesis was developed, refer to the ‘Hypothesis’ and ‘Opportunity Sizing’ section in the [365 Sign-Up Flow Optimization Analysis Report](365_Analysis_Report.docx)
 
 ## Actionable Insights Based on our Analysis
 
@@ -229,7 +229,7 @@ Results confirmed our hypothesis with statistical significance (82.61% power, p-
 We are confident that the enhanced sign-up screen will attract a larger user base, leading to increased paid users and revenue.
 
 > [!NOTE]
-> For a detailed breakdown of the A/B test, refer to the ‘A/B Testing’ section in the [365 Sign-Up Flow Optimization Analysis Report]
+> For a detailed breakdown of the A/B test, refer to the ‘A/B Testing’ section in the [365 Sign-Up Flow Optimization Analysis Report](365_Analysis_Report.docx)
 
 ## Contact Information
 

@@ -16,7 +16,7 @@
 
 We used MySQL to extract relevant data in the form of CSV files and Tableau to create a story-based [dashboard](https://public.tableau.com/app/profile/pricila.miguel/viz/365Sign-UpFlow/Sign_UpFlow) for our analysis.
 
-As a data analyst, our task is to provide recommendations to help elevate the platform based off of data that was collected from the 365 Data Science website which include registration, sign-up, and log-in data.
+As a data analyst, our task is to provide recommendations to help elevate the platform based off of data that was collected from the 365 Data Science website which include registration, sign-in, and log-in data.
 
 ## About the Company
 
